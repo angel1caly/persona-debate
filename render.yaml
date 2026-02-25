@@ -1,0 +1,8 @@
+# Render Static Site – Persona Debate
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: persona-debate
+    runtime: static
+    buildCommand: node scripts/write-config-keys.js
+    staticPublishPath: .
